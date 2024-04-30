@@ -1,0 +1,31 @@
+{
+  "name": "my-fullstack-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "format": "turbo format"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.3",
+    "cookie-session": "^2.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.5.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "turbo": "^1.11.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-session": "^2.0.48",
+    "autoprefixer": "^10.4.19"
+  }
+}
