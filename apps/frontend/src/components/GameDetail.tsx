@@ -27,7 +27,7 @@ const GameDetail = ({ gameId }) => {
         <div>
             {reviews.length > 0 ? (
                 reviews.map(review => (
-                    <div key={review._id}>
+                    <div key={review._id} className='p-2 border border-gray-300 rounded-lg mb-4 shadow-sm hover:shadow-md transition-shadow duration-200 ease-in-out'>
                         <p>{review.authorName}: {review.content} (Rating: {review.rating})</p>
                     </div>
                 ))

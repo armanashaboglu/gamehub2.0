@@ -15,11 +15,11 @@ const UserProfile = ({ user, onUpdate }) => {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor='username'>Username:</label>
-                    <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+                    <input className='p-2' type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
                 </div>
                 <div>
                     <label htmlFor='bio'>Bio:</label>
-                    <input type="text" value={bio} onChange={(e) => setBio(e.target.value)} />
+                    <input className='p-2' type="text" value={bio} onChange={(e) => setBio(e.target.value)} />
                 </div>
                 <button type="submit">Update</button>
             </form>

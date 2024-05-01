@@ -11,6 +11,7 @@ const GamePage = () => {
         <div>
             <Header />
             <main>
+                <h2 className='text-3xl font-bold tracking-tight'>s</h2>
                 <GameDetail gameId={gameId}/>
             </main>
             <Footer />
