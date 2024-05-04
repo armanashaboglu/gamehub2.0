@@ -7,12 +7,10 @@ export const createReview = async (req, res) => {
 
         // console.log('Creating review for game:', game);
 
-        // Check if the game exists by title (or ID, depending on your design)
         const existingGame = await Game.findOne({ title: game });
 
         let gameId;
         if (!existingGame) {
-            // Create new game
             const newGame = new Game({ title: game, description: 'n/a', releaseDate: '', genre: '', developer: '', publisher: '', platform: '' });
             await newGame.save();
             gameId = newGame._id;
